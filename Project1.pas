@@ -1,17 +1,24 @@
 program Project1;
 
 type
-  matrix = array of array of char;
+  matrix = array of array of integer;
 
 
   procedure display(Arr: matrix);
   var
     i, j: integer;
+    ch : char;
   begin
     for i := Low(Arr) to High(Arr) do
     begin
       for j := Low(Arr[i]) to High(Arr[i]) do
-        Write(Arr[i][j]: 2, '  ');
+      begin
+        if Arr[i][j] = 1 then
+          ch := 'x'
+        else
+          ch := ' ';
+        write(ch:2 , ' ');
+      end;
       WriteLn;
     end;
   end;
@@ -24,10 +31,7 @@ type
       for j := Low(Arr[i]) to High(Arr[i]) do
       begin
         temp := random(2);
-        if temp = 0 then
-          Arr[i][j] := ' '
-        else
-          Arr[i][j] := 'x';
+        Arr[i][j] := temp;
       end;
 
   end;
