@@ -1,5 +1,9 @@
 program Project1;
 
+uses
+  SysUtils;// For sleep()
+
+
 type
   matrix = array of array of integer;
 
@@ -64,7 +68,7 @@ type
     else if neighbours <= 3 then
       Exit(1)
     else
-     Exit(0);
+      Exit(0);
   end;
 
   procedure evolve(Arr: matrix);
@@ -74,7 +78,7 @@ type
   begin
     original := copy(Arr, 0, length(Arr));
     for i := Low(Arr) + 1 to High(Arr) - 1 do
-      for j := Low(Arr[i]) + 1to High(Arr[i]) - 1 do
+      for j := Low(Arr[i]) + 1 to High(Arr[i]) - 1 do
         Arr[i][j] := selection(original, i, j);
   end;
 
@@ -86,6 +90,12 @@ begin
   Randomize; // It's like random(time(NULL)) in C
   SetLength(arr, 5, 5);
   seed(arr);
-  display(arr);
-end.
 
+  // Game Loop
+  while True do
+  begin
+    display(arr);
+    evolve(arr);
+    Sleep(1000);
+  end;
+end.
