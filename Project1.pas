@@ -73,8 +73,8 @@ type
     original: matrix;
   begin
     original := copy(Arr, 0, length(Arr));
-    for i := Low(Arr) to High(Arr) do
-      for j := Low(Arr[i]) to High(Arr[i]) do
+    for i := Low(Arr) + 1 to High(Arr) - 1 do
+      for j := Low(Arr[i]) + 1to High(Arr[i]) - 1 do
         Arr[i][j] := selection(original, i, j);
   end;
 
