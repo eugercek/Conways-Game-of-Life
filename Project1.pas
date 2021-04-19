@@ -7,7 +7,7 @@ type
   procedure display(Arr: matrix);
   var
     i, j: integer;
-    ch : char;
+    ch: char;
   begin
     for i := Low(Arr) to High(Arr) do
     begin
@@ -17,7 +17,7 @@ type
           ch := 'x'
         else
           ch := ' ';
-        write(ch:2 , ' ');
+        Write(ch: 2, ' ');
       end;
       WriteLn;
     end;
@@ -36,12 +36,30 @@ type
 
   end;
 
+   {
+   count_neighbours doesn't checks edges.
+   Matrix contains edges and cells.
+   }
+  function count_neighbours(Arr: matrix; row: integer; col: integer): integer;
+  var
+    i, j, ret: integer;
+  begin
+    ret := 0;
+    for i := -1 to 1 do
+      for j := -1 to 1 do
+      begin
+        ret += Arr[row + i][col + j];
+      end;
+    Exit(ret);
+  end;
+
 var
   arr: matrix;
 
 begin
+
   Randomize; // It's like random(time(NULL)) in C
-  SetLength(arr, 5, 3);
+  SetLength(arr, 5, 5);
   seed(arr);
   display(arr);
 end.
