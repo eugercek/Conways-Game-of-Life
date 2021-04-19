@@ -53,6 +53,31 @@ type
     Exit(ret);
   end;
 
+  function selection(Arr: matrix; row: integer; col: integer): integer;
+  var
+    neighbours: integer;
+
+  begin
+    neighbours := count_neighbours(Arr, row, col);
+    if neighbours < 2 then
+      Exit(0)
+    else if neighbours <= 3 then
+      Exit(1)
+    else
+     Exit(0);
+  end;
+
+  procedure evolve(Arr: matrix);
+  var
+    i, j: integer;
+    original: matrix;
+  begin
+    original := copy(Arr, 0, length(Arr));
+    for i := Low(Arr) to High(Arr) do
+      for j := Low(Arr[i]) to High(Arr[i]) do
+        Arr[i][j] := selection(original, i, j);
+  end;
+
 var
   arr: matrix;
 
@@ -63,5 +88,4 @@ begin
   seed(arr);
   display(arr);
 end.
-
 
