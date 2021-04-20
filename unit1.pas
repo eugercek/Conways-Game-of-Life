@@ -6,10 +6,10 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Grids, StdCtrls,
-  ExtCtrls;
+  ExtCtrls, Project1;
 
 type
-
+   matrix = array of array of integer;
   { TForm1 }
 
   TForm1 = class(TForm)
@@ -26,6 +26,7 @@ type
 
 var
   Form1: TForm1;
+  arr: matrix;
 
 implementation
 
@@ -35,6 +36,18 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
+
+  Randomize; // It's like random(time(NULL)) in C
+  SetLength(arr, 5, 5);
+  seed(arr);
+
+  // Game Loop
+  while True do
+  begin
+    display(arr);
+    evolve(arr);
+    Sleep(1000);
+  end;
   StringGrid1.Cells[3, 3] := 'x';
 end;
 
