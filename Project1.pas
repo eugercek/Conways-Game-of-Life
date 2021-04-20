@@ -41,8 +41,11 @@ procedure seed(Arr: matrix);
 var
   i, j, temp: integer;
 begin
-  for i := Low(Arr) to High(Arr) do
-    for j := Low(Arr[i]) to High(Arr[i]) do
+  { Again ... Corners are not cells
+  Because Edges are not living creature ...
+  }
+  for i := Low(Arr) + 1 to High(Arr) - 1 do
+    for j := Low(Arr[i]) + 1 to High(Arr[i]) - 1 do
     begin
       temp := random(2);
       Arr[i][j] := temp;

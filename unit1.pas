@@ -40,9 +40,8 @@ begin
   Randomize; // It's like random(time(NULL)) in C
   SetLength(arr, 5, 5);
   seed(arr);
-
-  StringGrid1.Cells[3, 3] := 'x';
 end;
+
 
 procedure TForm1.Timer1Timer(Sender: TObject);
 begin
