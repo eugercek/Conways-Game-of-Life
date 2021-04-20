@@ -1,0 +1,35 @@
+object Form1: TForm1
+  Left = 2318
+  Height = 544
+  Top = 240
+  Width = 438
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  Caption = 'Form1'
+  ClientHeight = 544
+  ClientWidth = 438
+  LCLVersion = '2.0.10.0'
+  object StringGrid1: TStringGrid
+    Left = 72
+    Height = 304
+    Top = 120
+    Width = 304
+    ColCount = 10
+    DefaultColWidth = 30
+    DefaultRowHeight = 30
+    FixedCols = 0
+    FixedRows = 0
+    RowCount = 10
+    ScrollBars = ssNone
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 189
+    Height = 25
+    Top = 478
+    Width = 75
+    Caption = 'Random'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+end
