@@ -1,4 +1,4 @@
-unit Project1;
+program Project1;
 
 uses
   SysUtils;// For sleep()
