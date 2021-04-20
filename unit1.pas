@@ -41,19 +41,13 @@ begin
   SetLength(arr, 5, 5);
   seed(arr);
 
-  // Game Loop
-  while True do
-  begin
-    display(arr);
-    evolve(arr);
-    Sleep(1000);
-  end;
   StringGrid1.Cells[3, 3] := 'x';
 end;
 
 procedure TForm1.Timer1Timer(Sender: TObject);
 begin
-  writeln('1 second passed');
+  display(arr, StringGrid1);
+  evolve(arr);
 end;
 
 end.

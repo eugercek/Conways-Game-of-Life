@@ -2,10 +2,15 @@ unit Project1;
 
 interface   // Public Stuff (Declarations)
 
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Grids, StdCtrls,
+  ExtCtrls;
+
 type
   matrix = array of array of integer;
 
-procedure display(Arr: matrix);
+procedure display(Arr: matrix; StringGrid: TStringGrid);
 procedure seed(Arr: matrix);
 function count_neighbours(Arr: matrix; row: integer; col: integer): integer;
 function selection(Arr: matrix; row: integer; col: integer): integer;
@@ -14,7 +19,7 @@ procedure evolve(Arr: matrix);
 
 implementation
 
-procedure display(Arr: matrix);
+procedure display(Arr: matrix; StringGrid: TStringGrid);
 var
   i, j: integer;
   ch: char;
@@ -27,9 +32,8 @@ begin
         ch := 'x'
       else
         ch := ' ';
-      Write(ch: 2, ' ');
+      StringGrid.Cells[i, j] := ch;
     end;
-    WriteLn;
   end;
 end;
 
