@@ -37,7 +37,6 @@ type
         temp := random(2);
         Arr[i][j] := temp;
       end;
-
   end;
 
    {
@@ -54,7 +53,7 @@ type
       begin
         ret += Arr[row + i][col + j];
       end;
-    Exit(ret);
+    Exit(ret - Arr[row][col]); // Added twice
   end;
 
   function selection(Arr: matrix; row: integer; col: integer): integer;
@@ -63,12 +62,19 @@ type
 
   begin
     neighbours := count_neighbours(Arr, row, col);
-    if neighbours < 2 then
-      Exit(0)
-    else if neighbours <= 3 then
-      Exit(1)
+    if Arr[row][col] = 1 then // For live one
+      if neighbours < 2 then // Underpopulation
+        Exit(0)
+      else if neighbours <= 3 then // Lives
+        Exit(1)
+      else // Overpopulation
+        Exit(0)
     else
+    if neighbours = 3 then // Reproduction
+      Exit(1)
+    else// No change
       Exit(0);
+
   end;
 
   procedure evolve(Arr: matrix);
@@ -76,10 +82,16 @@ type
     i, j: integer;
     original: matrix;
   begin
-    original := copy(Arr, 0, length(Arr));
+    SetLength(original, 5, 5);
+    for i := Low(Arr) to High(Arr) do
+      for j := Low(Arr[i]) to High(Arr[i]) do
+        original[i][j] := Arr[i][j];
+
     for i := Low(Arr) + 1 to High(Arr) - 1 do
       for j := Low(Arr[i]) + 1 to High(Arr[i]) - 1 do
+      begin
         Arr[i][j] := selection(original, i, j);
+      end;
   end;
 
 var
