@@ -15,6 +15,7 @@ procedure seed(Arr: matrix);
 function count_neighbours(Arr: matrix; row: integer; col: integer): integer;
 function selection(Arr: matrix; row: integer; col: integer): integer;
 procedure evolve(Arr: matrix; size: integer);
+procedure fill_0_array(Arr: matrix);
 
 
 implementation
@@ -44,6 +45,8 @@ begin
   { Again ... Corners are not cells
   Because Edges are not living creature ...
   }
+  fill_0_array(arr);
+
   for i := Low(Arr) + 1 to High(Arr) - 1 do
     for j := Low(Arr[i]) + 1 to High(Arr[i]) - 1 do
     begin
@@ -117,4 +120,12 @@ begin
       StringGrid.Cells[i, j] := ' ';
 end;
 
+procedure fill_0_array(Arr: matrix);
+var
+  i, j: integer;
+begin
+  for i := Low(Arr) to High(Arr) do
+    for j := Low(Arr[i]) to High(Arr[i]) do
+      Arr[i][j] := 0;
+  end;
 end.

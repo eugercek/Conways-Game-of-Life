@@ -3,13 +3,13 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="conwaysLife.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="25" Y="10"/>
-        <UsageCount Value="26"/>
+        <CursorPos X="66" Y="21"/>
+        <UsageCount Value="30"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -19,151 +19,160 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <TopLine Value="32"/>
-        <CursorPos X="28" Y="43"/>
-        <UsageCount Value="26"/>
+        <TopLine Value="64"/>
+        <CursorPos Y="41"/>
+        <FoldState Value=" T7EBCq"/>
+        <UsageCount Value="30"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
-        <Filename Value="Project1.pas"/>
+        <Filename Value="patterns_file.pas"/>
+        <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="50"/>
-        <CursorPos X="37" Y="117"/>
-        <FoldState Value=" T3iF0B2-"/>
-        <UsageCount Value="12"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="22" Y="8"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
-        <Filename Value="patterns_file.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
-        <CursorPos Y="13"/>
-        <UsageCount Value="21"/>
+        <Filename Value="Project1.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="113"/>
+        <CursorPos X="7" Y="130"/>
+        <FoldState Value=" T3M0G0217"/>
+        <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="/usr/lib64/lazarus/lcl/grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9920"/>
+        <CursorPos X="58" Y="9934"/>
+        <UsageCount Value="10"/>
+      </Unit4>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="17" Column="45" TopLine="6"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="21" Column="46"/>
       </Position1>
       <Position2>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="30" Column="18" TopLine="20"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="22" Column="15" TopLine="9"/>
       </Position2>
       <Position3>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="90" Column="21" TopLine="63"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="9" Column="30"/>
       </Position3>
       <Position4>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="3" Column="72"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="22" Column="15" TopLine="9"/>
       </Position4>
       <Position5>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="2" Column="13"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="9" Column="30"/>
       </Position5>
       <Position6>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="6" Column="74"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="22" Column="15" TopLine="9"/>
       </Position6>
       <Position7>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="9" Column="58"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="9" Column="30" TopLine="30"/>
       </Position7>
       <Position8>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="19" Column="12"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="33" Column="30" TopLine="27"/>
       </Position8>
       <Position9>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="17" Column="11"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="20" Column="45" TopLine="8"/>
       </Position9>
       <Position10>
         <Filename Value="Project1.pas"/>
-        <Caret Line="7" Column="11"/>
+        <Caret Line="11" Column="20"/>
       </Position10>
       <Position11>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="10" Column="12"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="63" Column="9" TopLine="53"/>
       </Position11>
       <Position12>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="19" Column="11"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="21" TopLine="8"/>
       </Position12>
       <Position13>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="16" Column="12"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="28" Column="15" TopLine="15"/>
       </Position13>
       <Position14>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="10" Column="12"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="14" TopLine="5"/>
       </Position14>
       <Position15>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="2"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="26" Column="22" TopLine="13"/>
       </Position15>
       <Position16>
         <Filename Value="Project1.pas"/>
-        <Caret Line="10" Column="44"/>
+        <Caret Line="115" Column="52" TopLine="57"/>
       </Position16>
       <Position17>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="98" Column="21" TopLine="71"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="23" Column="18" TopLine="16"/>
       </Position17>
       <Position18>
-        <Filename Value="conwaysLife.lpr"/>
-        <Caret Line="21"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="31" Column="16" TopLine="7"/>
       </Position18>
       <Position19>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="50" Column="13" TopLine="20"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="29" Column="24" TopLine="8"/>
       </Position19>
       <Position20>
         <Filename Value="Project1.pas"/>
-        <Caret Line="17" Column="44" TopLine="4"/>
+        <Caret Line="103" Column="21" TopLine="77"/>
       </Position20>
       <Position21>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="44" Column="16" TopLine="33"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="29" Column="24" TopLine="18"/>
       </Position21>
       <Position22>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="59" Column="26" TopLine="30"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="30" Column="23" TopLine="18"/>
       </Position22>
       <Position23>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="48" TopLine="37"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="34" Column="24" TopLine="18"/>
       </Position23>
       <Position24>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="51" Column="35" TopLine="39"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="30" Column="19" TopLine="20"/>
       </Position24>
       <Position25>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="9" Column="23"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="35" Column="16" TopLine="20"/>
       </Position25>
       <Position26>
-        <Filename Value="patterns_file.pas"/>
-        <Caret Line="13"/>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="48" Column="19" TopLine="22"/>
       </Position26>
       <Position27>
-        <Filename Value="conwaysLife.lpr"/>
-        <Caret Line="10" Column="26"/>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="66" Column="11" TopLine="42"/>
       </Position27>
       <Position28>
-        <Filename Value="Project1.pas"/>
-        <Caret Line="114" Column="46" TopLine="47"/>
+        <Filename Value="patterns_file.pas"/>
+        <Caret Line="25" Column="21" TopLine="13"/>
       </Position28>
       <Position29>
         <Filename Value="Project1.pas"/>
-        <Caret Line="110" Column="44" TopLine="47"/>
+        <Caret Line="130" Column="7" TopLine="102"/>
       </Position29>
       <Position30>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="43" Column="16" TopLine="37"/>
+        <Filename Value="Project1.pas"/>
+        <Caret Line="131" Column="4" TopLine="115"/>
       </Position30>
     </JumpHistory>
     <RunParams>
