@@ -14,7 +14,7 @@ procedure display(Arr: matrix; StringGrid: TStringGrid);
 procedure seed(Arr: matrix);
 function count_neighbours(Arr: matrix; row: integer; col: integer): integer;
 function selection(Arr: matrix; row: integer; col: integer): integer;
-procedure evolve(Arr: matrix);
+procedure evolve(Arr: matrix; size: integer);
 
 
 implementation
@@ -90,12 +90,12 @@ begin
 
 end;
 
-procedure evolve(Arr: matrix);
+procedure evolve(Arr: matrix; size: integer);
 var
   i, j: integer;
   original: matrix;
 begin
-  SetLength(original, 5, 5);
+  SetLength(original, size, size);
   for i := Low(Arr) to High(Arr) do
     for j := Low(Arr[i]) to High(Arr[i]) do
       original[i][j] := Arr[i][j];
