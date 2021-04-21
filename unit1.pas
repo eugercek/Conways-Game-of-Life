@@ -58,15 +58,13 @@ begin
   if ComboBox1.ItemIndex = 0 then
     seed(arr)
   else if ComboBox1.ItemIndex = 1 then
-    block_seed(arr);
-  {
-  else if ComboBox1.ItemIndex = 1 then
+    block_seed(arr)
+  else if ComboBox1.ItemIndex = 2 then
     bee_hive_seed(arr)
-  else if ComboBox1.ItemIndex = 1 then
+  else if ComboBox1.ItemIndex = 3 then
     blinker_seed(arr)
-  else;
+  else
   glider_seed(arr);
-   }
 end;
 
 
