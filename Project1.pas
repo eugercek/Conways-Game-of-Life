@@ -10,6 +10,7 @@ type
   matrix = array of array of integer;
 
 procedure display(Arr: matrix; StringGrid: TStringGrid);
+procedure clear_display(StringGrid: TStringGrid);
 procedure seed(Arr: matrix);
 function count_neighbours(Arr: matrix; row: integer; col: integer): integer;
 function selection(Arr: matrix; row: integer; col: integer): integer;
@@ -106,5 +107,14 @@ begin
     end;
 end;
 
+
+procedure clear_display(StringGrid: TStringGrid);
+var
+  i, j: integer;
+begin
+  for i := 0 to StringGrid.RowCount - 1 do
+    for j := 0 to StringGrid.ColCount - 1 do
+      StringGrid.Cells[i, j] := ' ';
+end;
 
 end.

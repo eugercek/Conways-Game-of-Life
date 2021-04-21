@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Grids, StdCtrls,
-  ExtCtrls, Project1;
+  ExtCtrls, Project1, patterns_file;
 
 type
    matrix = array of array of integer;
@@ -40,6 +40,7 @@ procedure TForm1.Button1Click(Sender: TObject);
 begin
 //   Randomize; // It's like random(time(NULL)) in C
   // TODO Check If Edit1 is integer ?
+  clear_display(StringGrid1);
   matrix_size :=  StrToInt(Edit1.Text);
   SetLength(arr, matrix_size, matrix_size);
 
