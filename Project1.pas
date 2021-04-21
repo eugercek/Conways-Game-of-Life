@@ -2,7 +2,6 @@ unit Project1;
 
 interface   // Public Stuff (Declarations)
 
-
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Grids, StdCtrls,
   ExtCtrls;

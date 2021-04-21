@@ -39,7 +39,7 @@ implementation
 procedure TForm1.Button1Click(Sender: TObject);
 begin
 //   Randomize; // It's like random(time(NULL)) in C
-
+  // TODO Check If Edit1 is integer ?
   matrix_size :=  StrToInt(Edit1.Text);
   SetLength(arr, matrix_size, matrix_size);
 
@@ -47,7 +47,7 @@ begin
   // So each square can have row / matrix_size pixel width and height
   // matrix_size is how many square one edge has
 
-  StringGrid1.DefaultColWidth := Trunc(300 / matrix_size);
+  StringGrid1.DefaultColWidth  := Trunc(300 / matrix_size);
   StringGrid1.DefaultRowHeight := Trunc(300 / matrix_size);
   StringGrid1.RowCount := matrix_size + 1;
   StringGrid1.ColCount := matrix_size + 1;
