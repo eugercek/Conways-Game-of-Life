@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Grids, StdCtrls,
-  ExtCtrls, Menus, Project1, patterns_file;
+  ExtCtrls, Menus, ComCtrls, RTTICtrls, Project1, patterns_file;
 
 type
   matrix = array of array of integer;
@@ -18,8 +18,10 @@ type
     Edit1: TEdit;
     StringGrid1: TStringGrid;
     Timer1: TTimer;
+    TITrackBar1: TTITrackBar;
     procedure Button1Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
+    procedure TITrackBar1Change(Sender: TObject);
   private
 
   public
@@ -64,14 +66,24 @@ begin
   else if ComboBox1.ItemIndex = 3 then
     blinker_seed(arr)
   else
-  glider_seed(arr);
+    glider_seed(arr);
 end;
+
 
 
 procedure TForm1.Timer1Timer(Sender: TObject);
 begin
   display(arr, StringGrid1);
   evolve(arr, matrix_size);
+end;
+
+procedure TForm1.TITrackBar1Change(Sender: TObject);
+begin
+  // Max 1 second
+  if TITrackBar1.Position = 0 then
+    Timer1.Interval := 0
+  else
+  Timer1.Interval := Trunc(1000 / TITrackBar1.Position);
 end;
 
 end.
